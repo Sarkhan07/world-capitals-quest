@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>GeoGenius</title>
+    <link rel="icon" href="img/map.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <h1>GeoGenius</h1>
+        <p id="question"></p>
+        <div id="options" class="options"></div>
+        <p id="result"></p>
+        <div id="time"></div>
+        <label for="continentSelect">Выберите континент:</label>
+        <select id="continentSelect">
+            <option value=" ">Все континенты</option>
+            <option value="Южная Америка">Южная Америка</option>
+            <option value="Азия">Азия</option>
+            <option value="Океания">Океания</option>
+            <option value="Северная Америка">Северная Америка</option>
+            <option value="Европа">Европа</option>
+            <option value="Африка">Африка</option>
+        </select>
+        <button id="newGameBtn" onclick="startNewGame()">Начать игру</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
