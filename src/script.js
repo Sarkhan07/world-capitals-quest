@@ -238,6 +238,10 @@ function startGame() {
             if (timeRemaining <= 0) {
                 clearInterval(timerInterval);
                 displayResult();
+                const buttons = document.querySelectorAll('#options button');
+                buttons.forEach((button) => {
+                    button.disabled = true;
+                });
             }
         }, 1000);
     }
