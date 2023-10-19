@@ -195,7 +195,7 @@ const worldCountries = {
     'Зимбабве (континент: Африка)': 'Хараре',
 };
 
-let timeRemaining = 30;
+let timeRemaining = 60;
 let questionCount = 1;
 let correctAnswers = 0;
 let timerInterval;
@@ -210,7 +210,7 @@ document.getElementById('question').style.backgroundColor = 'transparent';
 async function startNewGame() {
     const continentSelect = document.getElementById('continentSelect');
     selectedContinent = continentSelect.value;
-    timeRemaining = 30;
+    timeRemaining = 60;
     questionCount = 1;
     correctAnswers = 0;
     clearInterval(timerInterval);
@@ -232,8 +232,8 @@ function startGame() {
             timeRemaining--;
             document.getElementById(
                 'time'
-            ).innerText = `Общее время выполнения тестов 30 секунд. Тест выполнен за: ${
-                30 - timeRemaining
+            ).innerText = `Общее время выполнения тестов 60 секунд. Тест выполнен за: ${
+                60 - timeRemaining
             } секунд`;
             if (timeRemaining <= 0) {
                 clearInterval(timerInterval);
